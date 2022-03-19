@@ -1,6 +1,6 @@
 package com.dio.exercicios;
 
-public class Conta {
+public abstract class Conta implements IConta {
     private int agencia;
     private int numero;
     private double saldo;
@@ -17,13 +17,18 @@ public class Conta {
         return saldo;
     }
 
-    public void sacar() {
+    @Override
+    public void sacar(double valor) {
+
     }
 
-    public void depositar() {
+    @Override
+    public void depositar(double valor) {
+
     }
 
-    public void transferir() {
-    }
+    @Override
+    public void transferir(Conta contaDestino, double valor) {
 
+    }
 }
