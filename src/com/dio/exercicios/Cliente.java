@@ -3,7 +3,7 @@ package com.dio.exercicios;
 public class Cliente {
     private String nome;
 
-    public String getNome() {v
+    public String getNome() {
         return nome;
     }
 
